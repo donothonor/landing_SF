@@ -42,7 +42,7 @@ button {
    .container {
         max-width: 339px;
    }
-   body {
+   body, html {
         overflow-x: hidden;
    }
 }
