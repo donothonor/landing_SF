@@ -846,4 +846,118 @@ button {
 }
 
 
+/* REQUEST */
+
+.request {
+    margin-top: 300px;
+    background-image: url(./assets/request/rs_background.png);
+    background-repeat: no-repeat;
+}
+.request-content {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.request-content-ls {
+
+}
+.request-content-ls-content {
+   padding-left: 180px;
+}
+.request-content-ls-content-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    margin-bottom: 100px;
+}
+.request-content-ls-content-item:last-child {
+    margin-bottom: 0;
+}
+.request-content-ls-content-item p {
+    width: 350px;
+    font-size: 16px;
+}
+.request-content-ls-content-item-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.request-content-ls-content-item-circle div {
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'Yeseva One', sans-serif;
+    background-color: #E3B873;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.request-content-rs {
+    color: white;
+    background: #131313;
+    /* width: 509px;
+    height: 509px; */
+}
+.request-content-rs-content {
+    padding: 28px 49px;
+    
+}
+.request-content-rs-content-title {
+    margin-bottom: 39px;
+    text-align: center;
+}
+.request-content-rs-content-input {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    margin-bottom: 49px;
+}
+.request-content-rs-content-input input {
+    width: inherit;
+    background: none;
+    border: none;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 8px;
+}
+.request-content-rs-content-input p {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+    align-self: flex-start;
+    margin-bottom: 7px;
+}
+.request-content-rs-content-input input::placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.request-content-rs-content-check {
+    margin-bottom: 39px;
+}
+.request-content-rs-content-check input  {
+    margin-right: 10px;
+}
+.request-content-rs-content-button {
+    float: right;
+    /* display: flex;
+    align-items: flex-end; */
+    width: 213px;
+    height: 51px;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;  
+}
+
+
 
