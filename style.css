@@ -849,6 +849,7 @@ button {
 /* REQUEST */
 
 .request {
+    position: relative;
     margin-top: 300px;
     background-image: url(./assets/request/rs_background.png);
     background-repeat: no-repeat;
@@ -950,6 +951,7 @@ button {
     float: right;
     /* display: flex;
     align-items: flex-end; */
+    margin-bottom: 10px;
     width: 213px;
     height: 51px;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
@@ -958,6 +960,198 @@ button {
     text-align: center;
     text-transform: uppercase;  
 }
+.pig {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    position: absolute;
+    bottom: -120px;
+    right: 140px;
+}
+.pig-logo {
+    position: relative;
+    width: 72px;
+    height: 72px;
+    background: #E3B873;
+    box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+    border-radius: 50%;
+}
+.pig-logo::before {
+    content: '';
+    background-image: url(./assets/request/pig.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 33px;
+    display: flex;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+.pig-logo::after {
+    content: '';
+    background-image: url(./assets/request/dollar.svg);
+    position: absolute;
+    width: 8px;
+    height: 11px;
+    top: 42%;
+    left: 42%;
+}
+.pig-disc {
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+
+
+@media screen and (max-width: 1300px) {
+    .request {
+        display: none;
+    }
+}
+
+
+/* FANTASY */
+
+.fantasy-mobile {
+    display: none;
+}
+.fantasy {
+    height: 951px;
+    position: relative;
+    z-index: 1;
+    margin-top: 300px;
+    background: url(./assets/fantasy/bg.png) no-repeat;
+    background-size: cover;
+}
+.fantasy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+    z-index: 2;
+}
+
+.fantasy-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+}
+.fantasy-content-ls {
+    padding-bottom: 97px;
+}
+.fantasy-content-ls-content {
+}
+.fantasy-content-ls-content-title {
+    color: #E3B873;
+    padding-top: 137px;
+    margin-bottom: 47px;
+    text-transform: uppercase;
+    font-size: 27px;
+    line-height: 37px;
+}
+.fantasy-content-ls-content-list {
+}
+.fantasy-content-ls-content-list li {
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 38px;
+}
+.fantasy-content-ls-content-list li:hover {
+    text-decoration: underline;
+    color: #E3B873;
+    cursor: pointer;
+}
+.fantasy-content-pictures {
+    display: flex;
+    justify-content: space-between;
+}
+.fantasy-content-pictures-ls {
+    display: flex;
+    flex-direction: column;
+}
+.fantasy-content-pictures-rs {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fantasy-content-pictures-ls img:first-child {
+    margin-top: -40px;
+    margin-bottom: 120px;
+}
+
+.fantasy-content-pictures-rs img:first-child {
+    margin-top: -40px;
+    margin-bottom: 45px;
+}
+
+@media  screen and (max-width: 1300px) {
+   .fantasy {
+        display: none;
+   }
+   .fantasy-mobile {
+        display: block;
+   }
+   
+    .fantasy-mobile-content {
+    }
+    .fantasy-mobile-title {
+        margin-bottom: 24px;
+        font-size: 22px;
+        line-height: 138.6%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #E3B873;
+
+    }
+    .fantasy-mobile-picture {
+        position: relative;
+        display: flex;
+        align-items: center;
+        background: url(./assets/fantasy/bg.png) no-repeat;
+        background-size: cover;
+        width: 339px;
+        height: 242px;
+    }
+    .fantasy-mobile-picture::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: #E3B873;
+        box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+        background-image: url(./assets/completed/arrow.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+    .fantasy-mobile-picture::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: #E3B873;
+        box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+        background-image: url(./assets/completed/arrow.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+    }
+}
+
 
 
 
